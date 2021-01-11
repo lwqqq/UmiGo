@@ -1,5 +1,5 @@
 import copy
-from Go.gotypes import Player
+from GoRule.gotypes import Player
 
 
 class Move:
@@ -90,7 +90,7 @@ class Bored:
             if other_color_string.num_liberties == 0:
                 self._remove_string(other_color_string)
 
-    def is_on_gird(self, point):
+    def is_on_grid(self, point):
         return 1 <= point.row <= self.num_rows and \
             1 <= point.col <= self.num_cols
 
@@ -171,7 +171,7 @@ class GameState:
         while past_state is not None:
             if past_state.situation == nxet_situation:
                 return True
-            past_state = past_state.previoust_state
+            past_state = past_state.previous_state
         return False
 
     def is_valid_move(self, move):
