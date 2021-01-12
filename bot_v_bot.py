@@ -1,13 +1,13 @@
 from GoRule import agent
 from GoRule import gotypes
-from GoRule import goboard_slow
+from GoRule import goboard
 from GoRule.utils import print_board, print_move
 import time
 
 
 def main():
     board_size = 9
-    game = goboard_slow.GameState.new_game(board_size)
+    game = goboard.GameState.new_game(board_size)
     bots = {
         gotypes.Player.black: agent.naive.RandomBot(),
         gotypes.Player.white: agent.naive.RandomBot(),
