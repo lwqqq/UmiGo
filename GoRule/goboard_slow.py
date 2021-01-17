@@ -55,7 +55,7 @@ class GoString:
             self.liberties == other.liberties
 
 
-class Bored:
+class Board:
     def __init__(self, num_rows, num_cols):
         self.num_rows = num_rows
         self.num_cols = num_cols
@@ -136,7 +136,7 @@ class GameState:
     def new_game(cls, board_size):
         if isinstance(board_size, int):
             board_size = (board_size, board_size)
-        board = Bored(*board_size)
+        board = Board(*board_size)
         return GameState(board, Player.black, None, None)
 
     def is_over(self):
