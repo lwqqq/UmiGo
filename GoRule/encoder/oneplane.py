@@ -1,6 +1,6 @@
 import numpy as np
 from GoRule.encoder.base import Encoder
-from GoRule.goboard import Point
+from GoRule.gotypes import Point
 
 
 class OnePlaneEncoder(Encoder):
