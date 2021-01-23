@@ -3,7 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/GoRule" />
-      <excludeFolder url="file://$MODULE_DIR$/gosgf" />
+      <excludeFolder url="file://$MODULE_DIR$/GoRule/gosgf" />
+      <excludeFolder url="file://$MODULE_DIR$/network" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (venv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
