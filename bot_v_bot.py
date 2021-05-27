@@ -13,7 +13,7 @@ def main():
         gotypes.Player.white: agent.naive.RandomBot(),
     }
     while not game.is_over():
-        time.sleep(0.3)
+        time.sleep(1)
 
         print(chr(27) + "[2j")
         print_board(game.board)

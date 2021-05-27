@@ -1,7 +1,7 @@
 import random
 from GoRule.agent.base import Agent
 from GoRule.agent.helpers import is_point_an_eye
-from GoRule.goboard_slow import Move
+from GoRule.goboard import Move
 from GoRule.gotypes import Point
 
 
